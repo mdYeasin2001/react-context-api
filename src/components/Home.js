@@ -5,8 +5,10 @@ const Home = () => {
     const [count, setCount] = useContext(countContext);
     return (
         <div>
-            <h1>This is home. {count}</h1>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <h1>This is home.</h1>
+            <button onClick={() => setCount('Laptop')}>Laptop</button>
+            <button onClick={() => setCount('Mobile')}>Mobile</button>
+            <button onClick={() => setCount('Camera')}>Camera</button>
         </div>
     );
 };

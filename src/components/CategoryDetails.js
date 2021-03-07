@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { countContext } from '../App';
 
-const CategoryDetails = () => {
-    const count = useContext(countContext);
+const CategoryDetails = ({product}) => {
+    console.log(product);
+    const {name, category} = product;
     return (
         <div>
-            <h3 style={{marginLeft: '40px'}}>This is category details and count is {count}</h3>
+            <h3 style={{marginLeft: '40px'}}>This is category details: {name} <br/> category: {category}</h3>
         </div>
     );
 };
