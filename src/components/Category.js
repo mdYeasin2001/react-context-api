@@ -1,9 +1,11 @@
 import React from 'react';
+import CategoryDetails from './CategoryDetails';
 
 const Category = () => {
     return (
         <div>
-            <h2>This is category.</h2>
+            <h2 style={{marginLeft: '20px'}}>This is category.</h2>
+            <CategoryDetails/>
         </div>
     );
 };
