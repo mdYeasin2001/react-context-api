@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { countContext } from '../App';
 
-const Home = ({count, setCount}) => {
+const Home = () => {
+    const [count, setCount] = useContext(countContext);
     return (
         <div>
             <h1>This is home. {count}</h1>

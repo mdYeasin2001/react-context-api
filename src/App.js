@@ -9,8 +9,8 @@ export const countContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <countContext.Provider value={count}>
-      <Home count={count} setCount={setCount}/>
+    <countContext.Provider value={[count, setCount]}>
+      <Home/>
       <About/>
       <Contact/>
     </countContext.Provider>
